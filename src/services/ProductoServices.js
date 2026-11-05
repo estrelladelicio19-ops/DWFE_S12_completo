@@ -13,14 +13,3 @@ const URL_API_PUBLICO = "https://dummyjson.com/products";
     return await response.json()
 }
 
-export async function ObtenerProductosPublicos(){
-    const response = await fetch(URL_API_PUBLICO);
-
-    if(!response.ok)
-    {
-        throw new Error("Error al cargar la data");
-        
-    }
-
-    return await response.json()
-}
